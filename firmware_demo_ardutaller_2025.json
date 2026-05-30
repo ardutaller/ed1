@@ -1,0 +1,12 @@
+{
+  "name": "Programa Cocube Sigue la ruta",
+  "version": "1.0.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "cocube_sigue_ruta.bin", "offset": 0}
+      ]
+    }
+  ]
+}
