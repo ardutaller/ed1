@@ -1,11 +1,11 @@
 {
-  "name": "Programa Cocube Sigue la ruta",
+  "name": "Programa ED1 Maquina Virtual Microblocks",
   "version": "1.0.0",
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "cocube_sigue_ruta.bin", "offset": 0}
+        { "path": "vm_citilab-ed1 30052026).bin", "offset": 0}
       ]
     }
   ]
