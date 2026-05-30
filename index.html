@@ -201,6 +201,27 @@ a{
 color:#38bdf8;
 }
 
+
+.hero-image{
+margin-bottom:25px;
+animation:floatRobot 4s ease-in-out infinite;
+}
+
+.hero-image img{
+width:280px;
+max-width:90%;
+height:auto;
+filter:
+drop-shadow(0 0 20px rgba(56,189,248,.35))
+drop-shadow(0 0 40px rgba(56,189,248,.20));
+}
+
+@keyframes floatRobot{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0px);}
+}
+
 </style>
 
 </head>
@@ -208,6 +229,13 @@ color:#38bdf8;
 <body>
 
 <div class="container">
+
+<div class="hero-image">
+<img
+src="https://raw.githubusercontent.com/ardutaller/images/main/robot_ed1.png"
+alt="Robot ED1">
+</div>
+
 
 <div class="subtitle">
 Firmware Upload System
