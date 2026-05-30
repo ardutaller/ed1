@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CoCube Firmware Installer</title>
+<title>Instalación Firmware ED1 Cibilab by ardutaller</title>
 
 <script type="module"
 src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js">
@@ -19,100 +20,51 @@ box-sizing:border-box;
 }
 
 body{
-
 min-height:100vh;
-
 font-family:Segoe UI,Arial,sans-serif;
-
 background:
 radial-gradient(circle at top,#1e3a5f 0%,transparent 35%),
 linear-gradient(135deg,#050816,#0f172a);
-
 color:white;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 padding:24px;
-
 }
 
 .container{
-
 width:100%;
 max-width:760px;
-
 padding:42px 34px;
-
 border-radius:28px;
-
 text-align:center;
-
 background:rgba(15,23,42,0.88);
-
 border:1px solid rgba(56,189,248,0.35);
-
 box-shadow:
 0 0 40px rgba(56,189,248,0.18),
 inset 0 0 25px rgba(56,189,248,0.04);
-
 backdrop-filter:blur(10px);
-
-}
-
-.logo{
-
-width:240px;
-
-max-width:90%;
-
-margin-bottom:28px;
-
-transition:.3s;
-
-}
-
-.logo:hover{
-transform:scale(1.03);
 }
 
 .subtitle{
-
 color:#38bdf8;
-
 text-transform:uppercase;
-
 letter-spacing:3px;
-
 font-size:.85rem;
-
 margin-bottom:18px;
-
 }
 
 h1{
-
 font-size:clamp(2rem,4vw,3rem);
-
 line-height:1.2;
-
 margin-bottom:22px;
-
 }
 
 .description{
-
 color:#cbd5e1;
-
 line-height:1.8;
-
 font-size:1.08rem;
-
 margin-bottom:28px;
-
 }
 
 .selector{
@@ -120,123 +72,83 @@ margin-bottom:30px;
 }
 
 select{
-
 width:100%;
-
 max-width:520px;
-
 padding:15px 18px;
-
 border-radius:16px;
-
 background:#020617;
-
 border:1px solid rgba(125,211,252,.4);
-
 color:white;
-
 font-size:1rem;
-
 outline:none;
-
 }
 
 .status{
-
 display:inline-block;
-
 padding:12px 18px;
-
 margin-bottom:32px;
-
 border-radius:999px;
-
 background:rgba(34,197,94,.10);
-
 border:1px solid rgba(34,197,94,.35);
-
 color:#86efac;
-
 font-size:.85rem;
-
 font-weight:600;
-
 }
 
 .flash-box{
-
 padding:32px;
-
 border-radius:24px;
-
 background:rgba(2,6,23,.85);
-
 border:1px dashed rgba(125,211,252,.4);
-
 margin-bottom:28px;
+}
 
+.programming-note{
+margin-top:20px;
+padding:16px;
+border-radius:14px;
+background:rgba(245,158,11,.10);
+border:1px solid rgba(245,158,11,.35);
+color:#fde68a;
+font-size:.95rem;
+line-height:1.7;
+text-align:left;
 }
 
 .driver-button{
-
 display:inline-block;
-
 padding:15px 24px;
-
 border-radius:16px;
-
 background:linear-gradient(135deg,#0284c7,#2563eb);
-
 color:white;
-
 text-decoration:none;
-
 font-weight:700;
-
 }
 
 .note{
-
 margin-top:22px;
-
 color:#94a3b8;
-
 font-size:.95rem;
-
 line-height:1.7;
-
 }
 
 .extra-links{
-
 margin-top:38px;
-
 display:flex;
-
 flex-direction:column;
-
 gap:34px;
-
 }
 
 .extra-item{
-
 display:flex;
-
 flex-direction:column;
-
 align-items:center;
-
 }
 
 .extra-text{
-
 color:#cbd5e1;
-
 font-size:.95rem;
-
 margin-bottom:12px;
-
 }
 
 .microblocks-logo{
@@ -247,24 +159,11 @@ width:150px;
 width:140px;
 }
 
-.innova-logo{
-
-width:180px;
-
-border-radius:10px;
-
-}
-
 footer{
-
 margin-top:34px;
-
 color:#94a3b8;
-
 font-size:.95rem;
-
 line-height:1.8;
-
 }
 
 a{
@@ -279,48 +178,34 @@ color:#38bdf8;
 
 <div class="container">
 
-<a href="https://www.ardutaller.com.es/cocube/" target="_blank">
-
-<img
-class="logo"
-src="https://raw.githubusercontent.com/ardutaller/images/main/logo_cocube_steamakers.png">
-
-</a>
-
 <div class="subtitle">
 Firmware Upload System
 </div>
 
 <h1>
-
-CoCube
-
+Instalación de Firmware
 <br>
-
-Firmware Installer
-
+Placa ED1 de Cibilab
 </h1>
 
 <p class="description">
-
 Selecciona el firmware que deseas instalar y pulsa conectar.
-
 </p>
 
 <div class="selector">
 
 <select id="firmwareSelect">
 
-<option value="programa_inicial_cocube.json">
-Programa Inicial CoCube
+<option value="firmware_microblocks_ed1.json">
+Instalar firmware MicroBlocks
 </option>
 
-<option value="control_cocube_app_ardutaller.json">
-Control CoCube App Ardutaller
+<option value="firmware_fabrica_ed1_30052026.json">
+Instalar firmware fábrica ED1 (30052026)
 </option>
 
-<option value="mani_sigue_ruta.json">
-CoCube sigue la ruta
+<option value="firmware_demo_ardutaller_2025.json">
+Instalar firmware Demo Ardutaller (2025)
 </option>
 
 </select>
@@ -328,18 +213,25 @@ CoCube sigue la ruta
 </div>
 
 <div class="status">
-
 ● SISTEMA LISTO
-
 </div>
 
 <div class="flash-box">
 
 <esp-web-install-button
 id="installButton"
-manifest="programa_inicial_cocube.json">
-
+manifest="firmware_microblocks_ed1.json">
 </esp-web-install-button>
+
+<div class="programming-note">
+
+⚠️ Si no carga el firmware, es posible que sea necesario entrar en modo programación.
+
+<br><br>
+
+Mientras pulsas el botón <strong>"Conectar"</strong> del ordenador, mantén pulsado el botón <strong>"OK"</strong> de la placa <strong>ED1</strong> hasta que comience la carga del firmware.
+
+</div>
 
 </div>
 
@@ -353,9 +245,7 @@ target="_blank">
 </a>
 
 <p class="note">
-
-Si el dispositivo no aparece instala el controlador USB.
-
+Si el dispositivo no aparece, instala el controlador USB correspondiente.
 </p>
 
 <div class="extra-links">
@@ -363,9 +253,7 @@ Si el dispositivo no aparece instala el controlador USB.
 <div class="extra-item">
 
 <p class="extra-text">
-
-Puedes programar CoCube utilizando MicroBlocks
-
+Puedes programar la placa ED1 utilizando MicroBlocks
 </p>
 
 <a href="https://microblocks.fun/" target="_blank">
@@ -381,10 +269,7 @@ src="https://microblocks.fun/assets/img/logos/MicroBlocks.svg">
 <div class="extra-item">
 
 <p class="extra-text">
-
-Puedes encontrar más información en:
-Steamtaller / Ardutaller
-
+Más información y recursos educativos en Ardutaller
 </p>
 
 <a
@@ -394,26 +279,6 @@ target="_blank">
 <img
 class="ardutaller-logo"
 src="https://raw.githubusercontent.com/ardutaller/images/main/logo_ardutaller.png">
-
-</a>
-
-</div>
-
-<div class="extra-item">
-
-<p class="extra-text">
-
-Puedes comprar tu CoCube y accesorios en:
-
-</p>
-
-<a
-href="https://shop.innovadidactic.com/es/"
-target="_blank">
-
-<img
-class="innova-logo"
-src="https://shop.innovadidactic.com/img/innova-logo-1769682570.jpg">
 
 </a>
 
@@ -461,15 +326,11 @@ Ardutaller
 
 <script>
 
-const firmwareSelect=
-document.getElementById(
-"firmwareSelect"
-);
+const firmwareSelect =
+document.getElementById("firmwareSelect");
 
-const installButton=
-document.getElementById(
-"installButton"
-);
+const installButton =
+document.getElementById("installButton");
 
 firmwareSelect.addEventListener(
 "change",
@@ -486,6 +347,5 @@ this.value
 </script>
 
 </body>
-
 </html>
-
+```
