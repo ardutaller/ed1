@@ -1,11 +1,11 @@
 {
-  "name": "Programa Cocube Sigue la ruta",
+  "name": "Programa ED1 Ardutaller 2025",
   "version": "1.0.0",
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "cocube_sigue_ruta.bin", "offset": 0}
+        { "path": "ED1_ardutaller_2025.bin", "offset": 0}
       ]
     }
   ]
