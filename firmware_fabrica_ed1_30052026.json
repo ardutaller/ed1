@@ -5,7 +5,7 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "cocube_sigue_ruta.bin", "offset": 0}
+        { "path": "ED1_Test_300526.bin", "offset": 0}
       ]
     }
   ]
