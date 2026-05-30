@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instalación Firmware ED1 Cibilab</title>
+<title>Instalación Firmware ED1 Citilab</title>
 
 <script type="module"
 src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js">
@@ -67,6 +67,35 @@ color:#cbd5e1;
 line-height:1.8;
 font-size:1.08rem;
 margin-bottom:28px;
+}
+
+.official-info{
+margin:0 auto 34px auto;
+padding:22px;
+border-radius:22px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(125,211,252,.35);
+}
+
+.official-info p{
+color:#e0f2fe;
+font-size:1rem;
+margin-bottom:16px;
+}
+
+.citilab-logo{
+max-width:210px;
+width:70%;
+background:white;
+padding:14px 18px;
+border-radius:16px;
+box-shadow:0 0 24px rgba(56,189,248,.18);
+transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.citilab-logo:hover{
+transform:scale(1.04);
+box-shadow:0 0 32px rgba(56,189,248,.35);
 }
 
 .selector{
@@ -187,8 +216,25 @@ Firmware Upload System
 <h1>
 Instalación de Firmware
 <br>
-Placa ED1 de Cibilab
+Placa ED1 de Citilab
 </h1>
+
+<div class="official-info">
+
+<p>
+Información oficial disponible en:
+</p>
+
+<a href="https://market.citilab.eu/es/producte/placa-ed1/" target="_blank">
+
+<img
+class="citilab-logo"
+src="https://coneixements.citilab.eu/wp-content/uploads/2017/06/logo-citilab@2x-1.png"
+alt="Citilab">
+
+</a>
+
+</div>
 
 <p class="description">
 Selecciona el firmware que deseas instalar y pulsa conectar.
